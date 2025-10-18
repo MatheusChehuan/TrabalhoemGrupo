@@ -25,7 +25,7 @@ public class VendedorService {
 		return perfil.get();
 	}
 	
-	public Vendedor inserir(Vendedor perfil) {
-		return repository.save(perfil);
+	public Vendedor inserir(Vendedor vendedor ) {
+		return repository.save(vendedor);
 	}
 }
