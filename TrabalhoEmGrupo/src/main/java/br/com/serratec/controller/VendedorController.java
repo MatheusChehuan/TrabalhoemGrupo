@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.serratec.dto.VendedorRequestDTO;
+import br.com.serratec.dto.VendedorResponseDTO;
 import br.com.serratec.entity.Vendedor;
 import br.com.serratec.service.VendedorService;
 
@@ -34,7 +36,7 @@ public class VendedorController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public Vendedor inserir(@RequestBody Vendedor Vendedor) {
-		return service.inserir(Vendedor);
+	public VendedorResponseDTO inserir(@RequestBody VendedorRequestDTO vendedordto) {
+		return service.inserir(vendedordto);
 	}
 }

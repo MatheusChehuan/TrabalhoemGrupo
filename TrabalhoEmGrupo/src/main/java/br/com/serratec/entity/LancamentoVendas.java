@@ -24,6 +24,9 @@ public class LancamentoVendas {
     @JoinColumn(name = "id_vendedor", nullable = false)
     private Vendedor vendedor;
 	
+	public LancamentoVendas() {
+	}
+	
 	public Long getId() {
 		return Id;
 	}

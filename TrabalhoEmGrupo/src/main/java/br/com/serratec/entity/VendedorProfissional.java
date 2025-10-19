@@ -1,7 +1,8 @@
 package br.com.serratec.entity;
 
-import jakarta.persistence.Entity;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import jakarta.persistence.Entity;
 @Entity
 public class VendedorProfissional extends Vendedor{
 	

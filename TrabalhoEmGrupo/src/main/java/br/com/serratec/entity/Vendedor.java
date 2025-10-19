@@ -12,7 +12,6 @@ import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "perfil")
 public class Vendedor {
 
     @Id

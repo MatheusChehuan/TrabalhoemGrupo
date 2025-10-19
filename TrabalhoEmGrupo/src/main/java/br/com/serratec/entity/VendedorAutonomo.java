@@ -1,7 +1,7 @@
 package br.com.serratec.entity;
 
-import jakarta.persistence.Entity;
 
+import jakarta.persistence.Entity;
 @Entity
 public class VendedorAutonomo extends Vendedor{
 

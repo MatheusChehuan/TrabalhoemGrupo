@@ -2,6 +2,7 @@ package br.com.serratec.dto;
 
 import java.time.LocalDate;
 
+import br.com.serratec.entity.LancamentoVendas;
 import br.com.serratec.entity.Vendedor;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,20 +14,20 @@ public class LancamentoVendasRequestDTO {
 	private Long id;
 	private LocalDate data;
 	private Double valor;
-	private Vendedor Vendedor;
-	private String nomevendedor;
-	
+	private Long vendedor_id;
+
 	public LancamentoVendasRequestDTO() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public LancamentoVendasRequestDTO(Long id, LocalDate data, Double valor, br.com.serratec.entity.Vendedor vendedor) {
+	
+	public LancamentoVendasRequestDTO(LocalDate data, Double valor, Long vendedor_id) {
 		super();
-		this.id = id;
 		this.data = data;
 		this.valor = valor;
-		this.nomevendedor = vendedor.getNome();
+		this.vendedor_id = vendedor_id;
 	}
+
 	public Long getId() {
 		return id;
 	}
@@ -45,13 +46,14 @@ public class LancamentoVendasRequestDTO {
 	public void setValor(Double valor) {
 		this.valor = valor;
 	}
-	public Vendedor getVendedor() {
-		return Vendedor;
-	}
-	public void setVendedor(Vendedor vendedor) {
-		Vendedor = vendedor;
-	}
-	
-	
 
+
+	public Long getVendedor_id() {
+		return vendedor_id;
+	}
+
+	public void setVendedor_id(Long vendedor_id) {
+		this.vendedor_id = vendedor_id;
+	}
+	
 }
