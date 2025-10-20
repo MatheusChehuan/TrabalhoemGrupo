@@ -11,7 +11,7 @@
 	<groupId>br.com.serratec</groupId>
 	<artifactId>ExercicioFuncionario</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TrabalhoEmGrupo</name>
+	<name>TrabalhoEmGrupoV2</name>
 	<description>Projeto de introdução</description>
 	<url/>
 	<licenses>
@@ -55,14 +55,19 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-    		<groupId>io.springfox</groupId>
-    		<artifactId>springfox-boot-starter</artifactId>
-    		<version>3.0.0</version>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.3.0</version> 
 		</dependency>
 	</dependencies>
 
