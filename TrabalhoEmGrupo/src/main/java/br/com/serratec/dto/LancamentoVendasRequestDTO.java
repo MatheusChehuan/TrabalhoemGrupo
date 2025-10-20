@@ -47,7 +47,6 @@ public class LancamentoVendasRequestDTO {
 		this.valor = valor;
 	}
 
-
 	public Long getVendedor_id() {
 		return vendedor_id;
 	}
