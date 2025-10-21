@@ -23,7 +23,7 @@ public class LancamentoVendasController {
     @Autowired
     private LancamentoVendasService service;
 
-    @GetMapping
+    @GetMapping("/{id}")
     public ResponseEntity<LancamentoVendasResponseDTO> listarPorId(@PathVariable Long id){
         return ResponseEntity.ok(service.listarPorId(id));
     }
